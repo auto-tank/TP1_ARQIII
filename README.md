@@ -25,7 +25,19 @@ Este trabalho foi testado apenas no sistema operacional **Ubuntu 24.04.2 LTS x86
     cd TP1_ARQIII
     ```
 
-2. **Executar as implementações de cache em VHDL**
+2. **Executar as implementações de cache para o Mapeamento Direto**
+
+    Rode os seguintes comandos:
+
+    ```bash
+    ghdl -a cache_direct_mapped.vhd
+    ghdl -a tb_cache_direct_mapped.vhd
+    ghdl -e tb_cache_direct_mapped
+    ghdl -r tb_cache_direct_mapped --vcd=wave.vcd
+    gtkwave wave.vcd
+    ```
+
+3. **Executar as implementações de cache para o Mapeamento Associativo de 4 Vias**
 
     Rode os seguintes comandos:
 
